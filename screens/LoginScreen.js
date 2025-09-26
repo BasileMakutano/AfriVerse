@@ -39,8 +39,8 @@ export default function LoginScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, // 👈 make it fill the whole screen
-    backgroundColor: 'lightblue', // 👈 covers entire screen
+    flex: 1, 
+    backgroundColor: 'lightblue', 
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
