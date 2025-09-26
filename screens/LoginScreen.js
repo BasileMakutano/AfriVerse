@@ -7,8 +7,7 @@ export default function LoginScreen({ navigation }) {
 
   const handleLogin = () => {
     if (username && password) {
-      // Here you could validate with backend if needed
-      navigation.navigate('Chat', { user: username });
+      navigation.navigate('Courses', { user: username });
     } else {
       Alert.alert("Error", "Please enter username and password");
     }
@@ -40,8 +39,8 @@ export default function LoginScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: 'lightblue',
+    flex: 1, // 👈 make it fill the whole screen
+    backgroundColor: 'lightblue', // 👈 covers entire screen
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
